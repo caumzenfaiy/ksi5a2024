@@ -19,7 +19,7 @@ for(i = 0; i < plainteks.length(); i++){
     if(isalpha(c)){
         c = toupper(c);
         c = c - 65;
-        c = (c + k) % 26;
+        c = (c + k + 26) % 26;
         c = c + 65;
     }
     cipherteks = cipherteks + c;
